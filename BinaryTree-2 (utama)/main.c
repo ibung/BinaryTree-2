@@ -1,3 +1,15 @@
+/*
+
+Gambar di atas merepresentasikan struktur pohon biner dalam tampilan horizontal (menyamping), di mana:
+- Akar (root) pohon terletak paling kiri dalam tampilan tersebut.
+- Setiap node dalam pohon bercabang ke arah kanan, sehingga semakin ke kanan menunjukkan tingkat kedalaman (depth) dari pohon.
+- Simpul-simpul (node) di bagian paling kanan yang tidak memiliki anak disebut sebagai leaf nodes atau simpul daun.
+
+Pola visual ini mempermudah pembacaan pohon dari kiri ke kanan, dengan alur:
+Root → Anak kiri → Anak kanan → ... → Leaf
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "./include/fairuz.h"

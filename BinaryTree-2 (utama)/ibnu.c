@@ -3,13 +3,12 @@
 #include "./include/ibnu.h"
 #include "./include/fairuz.h"
 
-// 1. Cari Node - Mencari node dengan nilai tertentu dalam binary tree
 int searchNode(Node* root, int value) {
     Node* current = root;
 
     while (current != NULL) {
         if (value == current->data) {
-            return 1; // Ditemukan
+            return 1; 
         } else if (value < current->data) {
             current = current->left;
         } else {
@@ -17,10 +16,9 @@ int searchNode(Node* root, int value) {
         }
     }
 
-    return 0; // Tidak ditemukan
+    return 0; 
 }
 
-// 2. Tinggi Tree - Menghitung tinggi binary tree (dengan BFS/iteratif)
 int getHeight(Node* root) {
     if (root == NULL) {
         return -1;
@@ -48,7 +46,6 @@ int getHeight(Node* root) {
     return height;
 }
 
-// 3. Jumlah Node - Menghitung jumlah node dalam binary tree
 int countNodes(Node* root) {
     if (root == NULL) {
         return 0;
@@ -70,7 +67,6 @@ int countNodes(Node* root) {
     return count;
 }
 
-// 4. Node Minimum - Mencari node dengan nilai minimum
 Node* findMinimum(Node* root) {
     if (root == NULL) {
         return NULL;
@@ -84,8 +80,6 @@ Node* findMinimum(Node* root) {
     return current;
 }
 
-
-// 5. Node Maksimum - Mencari node dengan nilai maksimum
 Node* findMaximum(Node* root) {
     if (root == NULL) {
         return NULL;
@@ -99,8 +93,6 @@ Node* findMaximum(Node* root) {
     return current;
 }
 
-
-// Fungsi bantu untuk membersihkan node
 void freeNode(Node* node) {
     if (node != NULL) {
         freeNode(node->left);

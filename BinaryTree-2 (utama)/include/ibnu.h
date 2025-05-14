@@ -3,11 +3,11 @@
 #include "fairuz.h"
 
 // Deklarasi fungsi-fungsi
-int searchNode(Node* tree, int value);  // Cari node
-int getHeight(Node* tree);              // Hitung tinggi tree
-int countNodes(Node* tree);             // Hitung jumlah node
-void freeTree(Node* tree);              // Membersihkan memori tree
-Node* findMinimum(Node* root);          // Cari nilai minimum
-Node* findMaximum(Node* root);           // Cari nilai maksimum
+int searchNode(Node* tree, int value);  
+int getHeight(Node* tree);              
+int countNodes(Node* tree);             
+void freeTree(Node* tree);              
+Node* findMinimum(Node* root);          
+Node* findMaximum(Node* root);           
 
 #endif /* IBNU_H */
