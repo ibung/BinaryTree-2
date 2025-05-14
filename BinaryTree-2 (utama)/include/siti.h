@@ -1,0 +1,18 @@
+#ifndef SITI_H
+#define SITI_H
+
+// Struktur Node BST
+typedef struct Node {
+    int data;
+    struct Node *left;
+    struct Node *right;
+} Node;
+
+// Deklarasi fungsi
+Node* deleteNodeIterative(Node* root, int data);
+void levelOrderTraversal(Node* root);
+Node* findPredecessor(Node* root, int data);
+Node* findSuccessor(Node* root, int data);
+void printTree(struct Node *root, int space);
+
+#endif
