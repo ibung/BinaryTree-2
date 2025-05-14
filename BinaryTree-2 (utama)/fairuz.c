@@ -56,24 +56,6 @@ Node *deleteNode(Node *root, int data) {
     return root;
 }
 
-void printTree(Node *root, int space) {
-    if (root == NULL) {
-        return;
-    }
-
-    space += 5;
-
-    printTree(root->right, space);
-
-    printf("\n");
-    for (int i = 5; i < space; i++) {
-        printf(" ");
-    }
-    printf("%d\n", root->data);
-
-    printTree(root->left, space);
-}
-
 void inorderTraversal(Node *root) {
     Node *stack[100];
     int top = -1;

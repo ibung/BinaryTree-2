@@ -1,12 +1,6 @@
 #ifndef SITI_H
 #define SITI_H
-
-// Struktur Node BST
-typedef struct Node {
-    int data;
-    struct Node *left;
-    struct Node *right;
-} Node;
+#include "fairuz.h"
 
 // Deklarasi fungsi
 Node* deleteNodeIterative(Node* root, int data);
