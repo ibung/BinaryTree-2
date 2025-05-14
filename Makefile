@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
 TARGET = tes
-SOURCES = main.c ibnu.c
-HEADERS = ibnu.h
+SOURCES = main.c ibnu.c fairuz.c siti.c
+HEADERS = include/ibnu.h include/fairuz.h include/siti.h
 
 all: $(TARGET)
 

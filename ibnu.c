@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "ibnu.h"
+#include "include/ibnu.h"
 
 // Membuat tree kosong
 BinaryTree* createEmpty() {
