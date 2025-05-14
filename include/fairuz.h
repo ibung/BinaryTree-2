@@ -1,13 +1,22 @@
-#ifndef TRAVERSAL_H
-#define TRAVERSAL_H
+#ifndef FAIRUZ_H
+#define FAIRUZ_H
 
-#include "ibnu.h"
+// Struktur Node BST
+typedef struct Node {
+    int data;
+    struct Node *left;
+    struct Node *right;
+} Node;
 
-// Deklarasi fungsi untuk traversal
-void inorderTraversal(Node *root);   // Traversal inorder
-void preorderTraversal(Node *root);  // Traversal preorder
-void postorderTraversal(Node *root); // Traversal postorder
-int isEmpty(BinaryTree *tree);       // Cek apakah tree kosong
-int findMinimum(BinaryTree *tree);   // Cari node minimum
+// Deklarasi fungsi
+Node *newNode(int data);
+Node *insertNode(Node *root, int data);
+Node *deleteNode(Node *root, int data);
+Node *minNode(Node *root);
+void printTree(Node *root, int space);
+void inorderTraversal(Node *root);
+void preorderTraversal(Node *root);
+void postorderTraversal(Node *root);
 
-#endif /* TRAVERSAL_H */
+
+#endif
